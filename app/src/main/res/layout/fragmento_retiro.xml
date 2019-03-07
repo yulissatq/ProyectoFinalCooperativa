@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FragmentoRetiro">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/search_busquedaCuentaRetiro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="152dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleNumeroCuentaBuquedaRetiro"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NumeroCuenta"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_numeroCuentaBusquedaRetiro"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleestadoCuentaRetiro"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_estadoCuentaBusquedaRetiro"
+                        android:layout_width="216dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleSaldoCuentaBusquedaRetiro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Saldo:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_saldoCuentaBusquedaRetiro"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_titleTipoCuentaBusquedaRetiro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tipo de Cuenta:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_tipoCuentaBusquedaRetiro"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/datos_retiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_cancelarRetiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="194dp"
+                android:layout_marginLeft="194dp"
+                android:layout_marginTop="252dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="CANCELAR" />
+
+            <TextView
+                android:id="@+id/titleDescripcionRetiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="120dp"
+                android:text="Descripcion:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <EditText
+                android:id="@+id/txt_descripcionRetiro"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="147dp"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="111dp"
+                android:ems="10"
+                android:hint="Ingrese Descripcion"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txt_montoRetiro"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="148dp"
+                android:layout_marginLeft="148dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="Ingrese monto a depositar"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/titleMontoRetiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="68dp"
+                android:text="Monto:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <Button
+                android:id="@+id/btn_retiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="252dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Retirar" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="270dp">
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+</FrameLayout>

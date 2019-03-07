@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleCedulaBuqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Cedula"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_cedulaBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titlenombre"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Nombre: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_nombreBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleApelldoBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Apellido:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_apellidoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titlegeneroBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Genero:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_generoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleEstadoCivilBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Estado civil:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_estadoCivilBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleFechaNacimientoBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Fecha de Nac.:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_FechaNacimientoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleCorreoBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Correo:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_correoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleTelefonoBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Telefono:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_telefonoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleCelularBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Celular:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_celularBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleDireccionBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Direccion:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_direccionBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl_titleEstadoBusqueda"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="Estado:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/lbl_estadoBusqueda"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:fontFamily="sans-serif-condensed" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,19 @@
+package com.cooperativaproyecto.yuli.cooperativa.Interfaces;
+
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoBuscarCliente;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoConsultaCuenta;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoCrearCuenta;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoDeposito;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoDesactivarCuenta;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoListarCliente;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoLogin;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoMenu;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoRetiro;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmentoTransferencia;
+import com.cooperativaproyecto.yuli.cooperativa.Fragmentos.FragmetoEditarCliente;
+
+public interface interfaces extends FragmentoMenu.OnFragmentInteractionListener,FragmentoCrearCuenta.OnFragmentInteractionListener, FragmentoLogin.OnFragmentInteractionListener
+,FragmentoBuscarCliente.OnFragmentInteractionListener,FragmentoListarCliente.OnFragmentInteractionListener,FragmetoEditarCliente.OnFragmentInteractionListener ,FragmentoConsultaCuenta.OnFragmentInteractionListener,
+        FragmentoDesactivarCuenta.OnFragmentInteractionListener,FragmentoDeposito.OnFragmentInteractionListener,
+        FragmentoRetiro.OnFragmentInteractionListener,FragmentoTransferencia.OnFragmentInteractionListener {
+}

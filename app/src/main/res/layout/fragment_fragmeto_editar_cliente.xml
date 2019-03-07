@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FragmetoEditarCliente">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_cancelarModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="186dp"
+            android:layout_marginLeft="186dp"
+            android:layout_marginTop="496dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="CANCELAR" />
+
+        <SearchView
+            android:id="@+id/search_buscarModificar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/btn_enviarModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="497dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Guardar" />
+
+        <TextView
+            android:id="@+id/text_titleTelefonoModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="99dp"
+            android:text="Telefono :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/txt_telefonoModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/txt_nombres"
+            android:layout_alignRight="@+id/txt_nombres"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="Ingrese Nuevo Telefono"
+            android:inputType="phone" />
+
+        <Spinner
+            android:id="@+id/sp_estadoCivilModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_telefonoModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/text_titleEstadoCivilModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_titleTelefonoModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="32dp"
+            android:text="Estado Civil :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/txt_direccionModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sp_estadoCivilModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Ingrese Nueva Direccion"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/text_titleDireccionModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_titleEstadoCivilModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="32dp"
+            android:text="Direccion :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/txt_correoModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_direccionModificar"
+            android:layout_alignEnd="@+id/sp_tipoCuenta"
+            android:layout_alignRight="@+id/sp_tipoCuenta"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="Ingrese Nuevo Correo"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/text_titleCorreoModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_titleDireccionModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="31dp"
+            android:text="Correo:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/txt_apellidosModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_correoModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Ingrese Apellidos"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lbl_titleApellidosModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_titleCorreoModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="33dp"
+            android:text="Apellidos :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/txt_titleNombresModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_titleApellidosModificar"
+            android:layout_alignEnd="@+id/lbl_titleApellidosCrear"
+            android:layout_alignRight="@+id/lbl_titleApellidosCrear"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginRight="-6dp"
+            android:text="Nombres :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/text_titleCelularModificar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_titleNombresModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="33dp"
+            android:text="Celular :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <EditText
+            android:id="@+id/txt_nombresModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_apellidosModificar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Ingrese Nombres"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txt_celularModificar"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_nombresModificar"
+            android:layout_alignEnd="@+id/txt_nombres"
+            android:layout_alignRight="@+id/txt_nombres"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:ems="10"
+            android:hint="Ingrese Nuevo Celular"
+            android:inputType="phone" />
+    </RelativeLayout>
+
+</FrameLayout>

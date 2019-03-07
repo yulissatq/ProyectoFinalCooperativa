@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FragmentoCrearCuenta">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_titleNumeroCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="26dp"
+                    android:text="Numero cuenta:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleSaldoCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleNumeroCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Saldo :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleTipoCuentaCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleSaldoCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Tipo de cuenta:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleCedulaCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleTipoCuentaCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Cedula :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/lbl_titleApellidosCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleCedulaCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Apellidos :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/txt_nombresCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl_titleApellidosCrear"
+                    android:layout_alignEnd="@+id/lbl_titleApellidosCrear"
+                    android:layout_alignRight="@+id/lbl_titleApellidosCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="-6dp"
+                    android:layout_marginRight="-6dp"
+                    android:text="Nombres :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleCelularCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_nombresCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Celular :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleCorreoCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleCelularCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Correo:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleDireccionCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleCorreoCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Direccion :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleEstadoCivilCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleDireccionCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Estado Civil :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleFechaNacimientoCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleEstadoCivilCrear"
+                    android:layout_alignEnd="@+id/lbl_titleApellidosCrear"
+                    android:layout_alignRight="@+id/lbl_titleApellidosCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Fecha de Nac.:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleGeneroCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleFechaNacimientoCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Genero :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/text_titleTelefonoCrear"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_titleGeneroCrear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="31dp"
+                    android:text="Telefono :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed" />
+
+                <EditText
+                    android:id="@+id/txt_NumeroCuenta"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="17dp"
+                    android:ems="10"
+                    android:hint="Ingrese Numero de Cuenta"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/txt_saldo"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_NumeroCuenta"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:hint="Ingrese Saldo"
+                    android:inputType="numberDecimal" />
+
+                <Spinner
+                    android:id="@+id/sp_tipoCuenta"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_saldo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="11dp"
+                    tools:ignore="RtlCompat" />
+
+                <Spinner
+                    android:id="@+id/sp_estadoCivil"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_direccion"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginLeft="118dp"
+                    android:layout_marginTop="16dp"
+                    tools:ignore="RtlCompat" />
+
+                <Spinner
+                    android:id="@+id/sp_genero"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_fechaNacimiento"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="119dp"
+                    android:layout_marginLeft="119dp"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/txt_cedula_crear"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/sp_tipoCuenta"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:hint="Ingrese Cedula"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_apellidos"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_cedula_crear"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:hint="Ingrese Apellidos"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_nombres"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_apellidos"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:hint="Ingrese Nombres"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_direccion"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_correo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="126dp"
+                    android:layout_marginLeft="126dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:hint="Ingrese Direccion"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_celular"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_nombres"
+                    android:layout_alignEnd="@+id/txt_nombres"
+                    android:layout_alignRight="@+id/txt_nombres"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:ems="10"
+                    android:hint="Ingrese Celular"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/txt_telefono"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/sp_genero"
+                    android:layout_alignEnd="@+id/txt_nombres"
+                    android:layout_alignRight="@+id/txt_nombres"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:ems="10"
+                    android:hint="Ingrese Telefono"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/txt_correo"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_celular"
+                    android:layout_alignEnd="@+id/sp_tipoCuenta"
+                    android:layout_alignRight="@+id/sp_tipoCuenta"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="126dp"
+                    android:layout_marginLeft="126dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="-9dp"
+                    android:layout_marginRight="-9dp"
+                    android:ems="10"
+                    android:hint="Ingrese Correo"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/txt_fechaNacimiento"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/sp_estadoCivil"
+                    android:layout_alignEnd="@+id/txt_nombres"
+                    android:layout_alignRight="@+id/txt_nombres"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="117dp"
+                    android:layout_marginLeft="117dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:ems="10"
+                    android:hint="Ingrese fecha de nacimiento"
+                    android:inputType="date" />
+
+                <Button
+                    android:id="@+id/btn_enviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="71dp"
+                    android:layout_marginLeft="71dp"
+                    android:layout_marginTop="685dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/btn_cancelarCrear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginLeft="182dp"
+                    android:layout_marginTop="684dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="CANCELAR" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

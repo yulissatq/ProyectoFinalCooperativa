@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FragmentoDeposito">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/search_busquedaCuentaDeposito"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="152dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleNumeroCuentaBuquedaDeposito"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:text="Numero Cuenta:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_numeroCuentaBusquedaDeposito"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="2dp"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleestadoCuentaDeposito"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:text="Estado:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_estadoCuentaBusquedaDeposito"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="2dp"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_titleSaldoCuentaBusquedaDeposito"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:text="Saldo:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_saldoCuentaBusquedaDeposito"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="2dp"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_titleTipoCuentaBusquedaDeposito"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:text="Tipo de Cuenta:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:id="@+id/lbl_tipoCuentaBusquedaDeposito"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="2dp"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        app:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/datos_deposito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_cancelarDeposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="182dp"
+                android:layout_marginLeft="182dp"
+                android:layout_marginTop="252dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="CANCELAR" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="102dp"
+                android:text="Descripcion:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <EditText
+                android:id="@+id/txt_descripcionDeposito"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_montoDeposito"
+                android:layout_alignStart="@+id/btn_depositar"
+                android:layout_alignLeft="@+id/btn_depositar"
+                android:layout_marginStart="66dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Ingrese Descripcion"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txt_montoDeposito"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="35dp"
+                android:layout_toEndOf="@+id/lbl_montoDeposito"
+                android:layout_toRightOf="@+id/lbl_montoDeposito"
+                android:ems="10"
+                android:hint="Ingrese monto a Depositar"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/lbl_montoDeposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="44dp"
+                android:text="Monto:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed" />
+
+            <Button
+                android:id="@+id/btn_depositar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="71dp"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="252dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Depositar" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
